@@ -1,0 +1,1062 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruxinha Cora | Experiencia Interativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Prototype de app infantil</p>
+        <h1>Bruxinha Cora</h1>
+        <p class="topbar-copy">Escolha um cantinho, toque nas respostas e brinque com a Cora.</p>
+      </div>
+      <button class="pill-button" id="themeButton" type="button">Modo festa</button>
+    </header>
+
+    <nav class="main-nav" aria-label="Navegacao principal">
+      <button class="nav-chip active" data-target="dashboard" type="button">Dashboard</button>
+      <button class="nav-chip" data-target="casa-mamae" type="button">Casa da Mamae</button>
+      <button class="nav-chip" data-target="casa-vovo" type="button">Casa da Vovo</button>
+      <button class="nav-chip" data-target="quarto-cora" type="button">Quarto da Cora</button>
+      <button class="nav-chip" data-target="jardim-sete-luas" type="button">Jardim das Sete Luas</button>
+      <button class="nav-chip" data-target="caderno-cora" type="button">Caderno da Cora</button>
+      <button class="nav-chip" data-target="bruxozap" type="button">Bruxozap</button>
+      <button class="nav-chip" data-target="mapa" type="button">Album</button>
+    </nav>
+
+    <main>
+      <section class="screen active" id="dashboard">
+        <div class="hero-card hero-card--illustrated">
+          <div>
+            <p class="kicker">Uma extensao viva da historia</p>
+            <h2>Sentir, reconhecer e explorar.</h2>
+            <p class="hero-text">
+              Entre nas casas, mande mensagens, invente combinacoes, escolha sentimentos e descubra pequenas coisas escondidas em cada tela.
+            </p>
+            <div class="mood-strip">
+              <span>familia</span>
+              <span>crescimento</span>
+              <span>identidade</span>
+              <span>saudade</span>
+              <span>geracoes</span>
+            </div>
+            <div class="feature-strip">
+              <span>7 cantinhos para brincar</span>
+              <span>mensagens e emojis</span>
+              <span>surpresas do Noir</span>
+            </div>
+          </div>
+
+          <aside class="art-frame art-frame--hero" data-asset-slot="dashboard/world-map-scene">
+            <div class="art-surface">
+              <span class="art-kicker">Mapa do universo</span>
+              <strong>As cidades da Cora</strong>
+              <p>Um mapa para escolher por onde a aventura vai comecar.</p>
+              <div class="placeholder-scene placeholder-scene--world">
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">LC</span>
+                  <strong>Luna Clara</strong>
+                  <small>Cora + mamae</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">VA</span>
+                  <strong>Vassourinhas</strong>
+                  <small>cidade da avo</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">BX</span>
+                  <strong>Bruxilia</strong>
+                  <small>capital magica</small>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel cities-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Escolha o destino</p>
+                <h3>Para onde a Cora vai agora?</h3>
+              </div>
+              <span class="tag">mapa interativo</span>
+            </div>
+
+            <div class="city-model">
+              <button class="city-card city-card--action rose" data-target="casa-mamae" type="button">
+                <div class="city-preview" data-asset-slot="dashboard/luna-clara">Luna Clara</div>
+                <span class="city-icon">LC</span>
+                <strong>Luna Clara</strong>
+                <p>Cidade-base da Cora: vizinhanca alegre, casinhas fofas, pontos clicaveis e clima de brincadeira.</p>
+                <small class="city-link">Abrir Casa da Mamae</small>
+                <small class="palette-note">livre · baguncada · viva</small>
+              </button>
+              <button class="city-card city-card--action lilac" data-target="casa-vovo" type="button">
+                <div class="city-preview" data-asset-slot="dashboard/vassourinhas">Vassourinhas</div>
+                <span class="city-icon">VS</span>
+                <strong>Vassourinhas</strong>
+                <p>Cidade da avo: pracas arrumadas, casinhas acolhedoras e leitura visual simples para explorar.</p>
+                <small class="city-link">Abrir Casa da Vovo</small>
+                <small class="palette-note">acolhedora · segura · antiga</small>
+              </button>
+              <button class="city-card city-card--action gold" data-target="bruxozap" type="button">
+                <div class="city-preview" data-asset-slot="dashboard/bruxilia">Bruxilia</div>
+                <span class="city-icon">BX</span>
+                <strong>Bruxilia</strong>
+                <p>Capital magica com torres brilhantes, lojas curiosas e um visual mais premium dentro do mesmo universo cartoon.</p>
+                <small class="city-link">Abrir Bruxozap</small>
+                <small class="palette-note">imponente · distante · magica</small>
+              </button>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Brincadeiras</p>
+                <h3>Toque em um lugar para entrar</h3>
+              </div>
+              <span class="tag">aventuras</span>
+            </div>
+
+            <div class="module-grid">
+              <button class="module-button" data-target="casa-mamae" type="button"><span>CM</span><strong>Casa da Mamae</strong><small>Nostalgia, humor e descobertas.</small></button>
+              <button class="module-button" data-target="casa-vovo" type="button"><span>CV</span><strong>Casa da Vovo</strong><small>Seguranca, rotina e pertencimento.</small></button>
+              <button class="module-button" data-target="quarto-cora" type="button"><span>QC</span><strong>Quarto da Cora</strong><small>Identidade, estilo e autonomia.</small></button>
+              <button class="module-button" data-target="jardim-sete-luas" type="button"><span>JL</span><strong>Jardim das Sete Luas</strong><small>Magia, escolhas e descoberta.</small></button>
+              <button class="module-button" data-target="caderno-cora" type="button"><span>CD</span><strong>Caderno da Cora</strong><small>Sentimentos, lembrancas e voz interior.</small></button>
+              <button class="module-button" data-target="bruxozap" type="button"><span>BZ</span><strong>Bruxozap</strong><small>Mensagens, fotos, emojis e vinculo a distancia.</small></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Tudo o que da para fazer</p>
+                <h3>Um mundo cheio de pequenas aventuras</h3>
+              </div>
+              <span class="tag">estrutura</span>
+            </div>
+            <div class="module-hud">
+              <article class="hud-card">
+                <span class="hud-label">Lugares</span>
+                <strong class="hud-value">7 cantinhos</strong>
+                <small class="hud-note">cada um com brincadeiras e descobertas</small>
+              </article>
+              <article class="hud-card">
+                <span class="hud-label">Acoes</span>
+                <strong class="hud-value">20+ toques</strong>
+                <small class="hud-note">escolhas, mensagens, roupas e surpresas</small>
+              </article>
+              <article class="hud-card">
+                <span class="hud-label">Conversas</span>
+                <strong class="hud-value">4 grupos</strong>
+                <small class="hud-note">familia, tia e colegas da escola</small>
+              </article>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Comece por aqui</p>
+                <h3>Ideias para brincar agora</h3>
+              </div>
+              <span class="tag">dicas</span>
+            </div>
+            <div class="choice-stack">
+              <div class="mini-note"><strong>1.</strong><span>Escolha uma casa, o jardim, o caderno ou o Bruxozap.</span></div>
+              <div class="mini-note"><strong>2.</strong><span>Toque nos botoes e veja o que muda em cada cantinho.</span></div>
+              <div class="mini-note"><strong>3.</strong><span>Responda como a Cora e experimente mandar fotos, quizzes e emojis.</span></div>
+              <div class="mini-note"><strong>4.</strong><span>Descubra em qual lugar a Cora parece mais voce hoje.</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid dashboard-grid--style">
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Jeito do jogo</p>
+                <h3>Fofo, claro e facil de tocar</h3>
+              </div>
+              <span class="tag">visual</span>
+            </div>
+            <div class="guided-panel guided-panel--style">
+              <p class="guided-title">O que faz esse mundo parecer vivo</p>
+              <div class="guided-replies">
+                <span class="guided-chip guided-chip--static">avatares fofos</span>
+                <span class="guided-chip guided-chip--static">cores vivas</span>
+                <span class="guided-chip guided-chip--static">objetos grandes</span>
+                <span class="guided-chip guided-chip--static">cantinhos tocaveis</span>
+              </div>
+            </div>
+            <div class="choice-stack choice-stack--style">
+              <div class="mini-note"><strong>Avatar</strong><span>Personagens com rosto legivel, gestos fofos e muita personalidade.</span></div>
+              <div class="mini-note"><strong>Cenario</strong><span>Cada lugar parece uma casinha pronta para ser explorada.</span></div>
+              <div class="mini-note"><strong>Toque</strong><span>Quase tudo convida a clicar, escolher, vestir, guardar ou responder.</span></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Sugestoes de passeio</p>
+                <h3>Se quiser testar bem rapidinho</h3>
+              </div>
+              <span class="tag">rotas</span>
+            </div>
+            <div class="module-hud">
+              <article class="hud-card hud-card--playful">
+                <span class="hud-label">Rota 1</span>
+                <strong class="hud-value">Casa da Mamae</strong>
+                <small class="hud-note">procure meias, responda perguntas e brinque de quiz de magia</small>
+              </article>
+              <article class="hud-card hud-card--playful">
+                <span class="hud-label">Rota 2</span>
+                <strong class="hud-value">Bruxozap</strong>
+                <small class="hud-note">mande respostas da Cora e veja como cada conversa muda</small>
+              </article>
+              <article class="hud-card hud-card--playful">
+                <span class="hud-label">Rota 3</span>
+                <strong class="hud-value">Quarto + Caderno</strong>
+                <small class="hud-note">vista a Cora, decore o quarto e guarde lembrancas do dia</small>
+              </article>
+            </div>
+          </article>
+        </div>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Cantinhos especiais</p>
+              <h3>Uma olhadinha no mundo da Cora</h3>
+            </div>
+            <span class="tag">mundo</span>
+          </div>
+
+          <div class="asset-rack asset-rack--gallery">
+            <article class="art-chip support-card art-chip--gallery" data-asset-slot="dashboard/bruxilia">
+              <span class="support-card__icon">BX</span>
+              <strong>Bruxilia</strong>
+              <small>cidade magica</small>
+            </article>
+            <article class="art-chip support-card art-chip--gallery" data-asset-slot="dashboard/vassourinhas">
+              <span class="support-card__icon">VS</span>
+              <strong>Vassourinhas</strong>
+              <small>cidade da avo</small>
+            </article>
+            <article class="art-chip support-card art-chip--gallery" data-asset-slot="dashboard/luna-clara">
+              <span class="support-card__icon">LC</span>
+              <strong>Luna Clara</strong>
+              <small>cidade da Cora</small>
+            </article>
+            <article class="art-chip support-card art-chip--gallery" data-asset-slot="dashboard/agnes-portrait">
+              <span class="support-card__icon">AG</span>
+              <strong>Vovo</strong>
+              <small>carinho quentinho</small>
+            </article>
+          </div>
+        </article>
+
+        <div class="dashboard-grid">
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Familia e vinculos</p>
+                <h3>Personagens</h3>
+              </div>
+              <span class="tag">retratos</span>
+            </div>
+
+            <div class="character-grid">
+              <article class="character-card"><div class="portrait-slot" data-asset-slot="dashboard/cora-portrait">Cora</div><strong>Cora</strong><p>Baguncada, curiosa, descalca em casa e sempre com algo interessante na mao.</p></article>
+              <article class="character-card"><div class="portrait-slot" data-asset-slot="dashboard/agata-portrait">Agata</div><strong>Agata</strong><p>Caotica, afetiva, bolsos cheios e uma leveza que faz parecer que esta flutuando.</p></article>
+              <article class="character-card"><div class="portrait-slot" data-asset-slot="dashboard/vovo-portrait">Vovo</div><strong>Vovo</strong><p>Solida, calorosa, avental simples e maos que contam toda uma vida de cuidado.</p></article>
+              <article class="character-card"><div class="portrait-slot" data-asset-slot="dashboard/tia-ingrid-portrait">Tia Ingrid</div><strong>Tia Ingrid</strong><p>Estilo caprichado, energia divertida e um olhar que percebe quando Cora quer se expressar pelo jeito de vestir.</p></article>
+              <article class="character-card"><div class="portrait-slot" data-asset-slot="dashboard/jade-portrait">Jade</div><strong>Jade</strong><p>Arrumada demais, fria e com um sorriso caprichado que nunca chega aos olhos.</p></article>
+              <article class="character-card"><div class="portrait-slot" data-asset-slot="dashboard/noir-portrait">Noir</div><strong>Noir</strong><p>Pequeno, preto com dourado e sempre observando tudo antes de todo mundo.</p></article>
+            </div>
+          </article>
+
+          <article class="panel noir-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Surpresa leve</p>
+                <h3>Procure o Noir</h3>
+              </div>
+              <span class="tag">microinteracao</span>
+            </div>
+
+            <div class="noir-stage" id="noirStage">
+              <button class="noir" id="noirButton" type="button" aria-live="polite">N</button>
+              <span class="spot spot-1"></span>
+              <span class="spot spot-2"></span>
+              <span class="spot spot-3"></span>
+              <span class="spot spot-4"></span>
+            </div>
+            <p class="helper-text" id="noirHint">Clique no Noir para descobrir onde ele vai parar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="casa-mamae">
+        <div class="section-hero">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Casa da Mamae</p>
+              <h2>Caos criativo com afeto</h2>
+            </div>
+            <p class="section-copy">Bagunca boa, perguntas curiosas e brincadeiras no meio do dia.</p>
+          </div>
+          <aside class="art-frame" data-asset-slot="casa-mamae/mamae-house-scene">
+            <div class="art-surface">
+              <span class="art-kicker">Cena principal</span>
+              <strong>A cozinha da Mamae</strong>
+              <p>Interior baguncado, criativo e afetuoso, com Cora e Agata em meio a panelas, livros e pequenas magias.</p>
+              <div class="placeholder-scene placeholder-scene--split">
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">ME</span>
+                  <strong>Caca as meias</strong>
+                  <small>hotspots clicaveis pela cozinha</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">PQ</span>
+                  <strong>Perguntas da Cora</strong>
+                  <small>baloes com resposta afetiva</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">EX</span>
+                  <strong>Experimento</strong>
+                  <small>resultado leve e engracado</small>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="asset-rack">
+          <article class="art-chip support-card" data-asset-slot="casa-mamae/kitchen-props-sheet"><span class="support-card__icon">KP</span><strong>Objetos da cozinha</strong><small>props e hotspots da cena</small></article>
+          <article class="art-chip support-card" data-asset-slot="casa-mamae/cora-agata-dialogue"><span class="support-card__icon">CG</span><strong>Dialogo Cora + Agata</strong><small>apoio visual para conversa</small></article>
+        </div>
+
+        <div class="module-hud">
+          <article class="hud-card">
+            <span class="hud-label">Meias encontradas</span>
+            <strong class="hud-value" id="mamaeHudSocks">0 de 3</strong>
+            <small class="hud-note">hotspots da cozinha</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Pergunta ativa</span>
+            <strong class="hud-value" id="mamaeHudQuestion">Laboratorio</strong>
+            <small class="hud-note">resposta da mamae no balcao</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Experimento</span>
+            <strong class="hud-value" id="mamaeHudExperiment">Esperando</strong>
+            <small class="hud-note">mistura leve e engracada</small>
+          </article>
+        </div>
+
+        <div class="app-toolbar">
+          <button class="app-action active" data-state-target="mamaeStateNote" data-state-message="Modo perguntas: a cozinha vira lugar de conversa, curiosidade e resposta afetiva." type="button">💬 Perguntas</button>
+          <button class="app-action" data-state-target="mamaeStateNote" data-state-message="Modo busca: a cena vira um pequeno caos organizado para achar meias e objetos." type="button">🧦 Busca</button>
+          <button class="app-action" data-state-target="mamaeStateNote" data-state-message="Modo experimento: escolher ingredientes muda o tom da cozinha e o humor do resultado." type="button">🧪 Experimento</button>
+          <button class="app-action" data-state-target="mamaeStateNote" data-state-message="Modo carinho: tudo aqui lembra que a bagunca da mamae tambem acolhe." type="button">💜 Carinho</button>
+        </div>
+        <div class="state-note" id="mamaeStateNote">Modo perguntas: a cozinha vira lugar de conversa, curiosidade e resposta afetiva.</div>
+
+        <div class="guided-panel">
+          <p class="guided-title">Sugestoes de resposta da Cora nesta tela</p>
+          <div class="guided-replies">
+            <button class="guided-chip" data-state-target="replyCard" data-state-message="Porque as vezes a bagunca mostra o caminho do que a gente esta criando." type="button">Por que aqui e tao baguncado?</button>
+            <button class="guided-chip" data-state-target="replyCard" data-state-message="Perguntar e um jeito de cuidar do mundo. Curiosidade tambem e carinho." type="button">Perguntar e um tipo de magia?</button>
+            <button class="guided-chip" data-state-target="experimentResult" data-state-message="Mamae sorri e diz: teste primeiro com brilho de lua, porque hoje a cozinha esta precisando de cintilancia." type="button">Me ajuda a escolher um experimento</button>
+            <button class="guided-chip" data-state-target="mamaeStateNote" data-state-message="Cora escolheu conversar antes de brincar, e a cozinha ficou com clima de abrigo." type="button">Quero conversar primeiro</button>
+          </div>
+        </div>
+
+        <div class="section-grid">
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 1</p><h3>Encontrar as meias</h3></div><span class="tag" id="sockCounter">0 de 3</span></div>
+            <p class="helper-text">Ache as tres meias perdidas.</p>
+            <div class="sock-grid" id="sockGrid">
+              <button class="sock-item sock-target" type="button">meia</button><button class="sock-item" type="button">livro</button><button class="sock-item" type="button">pote</button><button class="sock-item" type="button">planta</button>
+              <button class="sock-item" type="button">urso</button><button class="sock-item sock-target" type="button">meia</button><button class="sock-item" type="button">frigideira</button><button class="sock-item" type="button">pipa</button>
+              <button class="sock-item" type="button">tinta</button><button class="sock-item" type="button">xicara</button><button class="sock-item sock-target" type="button">meia</button><button class="sock-item" type="button">bule</button>
+            </div>
+          </article>
+
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 2</p><h3>Cora curiosa</h3></div><span class="tag">escolhas</span></div>
+            <p class="helper-text">Escolha uma pergunta para falar com a Mamae.</p>
+            <div class="question-list" id="questionList">
+              <button class="choice-button active" data-reply="Porque as vezes a bagunca mostra o caminho do que a gente esta criando.">Por que a cozinha parece um laboratorio?</button>
+              <button class="choice-button" data-reply="Perguntar e um jeito de cuidar do mundo. Curiosidade tambem e carinho.">Fazer perguntas e um tipo de magia?</button>
+              <button class="choice-button" data-reply="Tudo bem sentir saudade. A gente pode sentir falta e continuar vivendo coisas bonitas agora.">E quando a saudade aperta?</button>
+            </div>
+            <div class="reply-card" id="replyCard">As vezes a bagunca ajuda a gente a achar ideias.</div>
+          </article>
+        </div>
+
+        <article class="panel minigame wide-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Mini game 3</p><h3>Cientista com a mamae</h3></div><span class="tag">experimento leve</span></div>
+            <p class="helper-text">Escolha um ingrediente e veja o que acontece.</p>
+          <div class="experiment-layout">
+            <div class="choice-stack" id="experimentChoices">
+              <button class="experiment-button" data-result="A fumaca vira glitter cor-de-lua. Mamae anota: sucesso cintilante.">Misturar brilho de lua</button>
+              <button class="experiment-button" data-result="As bolhas escapam da panela e contam uma piada ruim. Cora ri primeiro.">Adicionar espuma de nuvem</button>
+              <button class="experiment-button" data-result="A colher comeca a cantar baixinho. Resultado: sopa afinada e coracao calmo.">Mexer com colher musical</button>
+            </div>
+            <div class="experiment-result" id="experimentResult">Escolha uma opcao para comecar.</div>
+          </div>
+        </article>
+      </section>
+      <section class="screen" id="casa-vovo">
+        <div class="section-hero">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Casa da Vovo</p>
+              <h2>Seguranca, cuidado e pertencimento</h2>
+            </div>
+            <p class="section-copy">Uma casa quentinha, organizada e com jeitinho de abraco.</p>
+          </div>
+          <aside class="art-frame" data-asset-slot="casa-vovo/vovo-house-scene">
+            <div class="art-surface">
+              <span class="art-kicker">Cena principal</span>
+              <strong>A casa da Vovo</strong>
+              <p>Casa acolhedora, organizada e calorosa, com fumaca na chamine, trico e mesa posta.</p>
+              <div class="placeholder-scene placeholder-scene--split">
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">PV</span>
+                  <strong>Passeio</strong>
+                  <small>escolhas de caminho com o vovo</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">RT</span>
+                  <strong>Rotina</strong>
+                  <small>ordem correta das atividades</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">ST</span>
+                  <strong>Estilo</strong>
+                  <small>quiz divertido com a tia</small>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="asset-rack">
+          <article class="art-chip support-card" data-asset-slot="casa-vovo/vovo-props-sheet"><span class="support-card__icon">VP</span><strong>Objetos da avo</strong><small>trico, chaleira e detalhes</small></article>
+          <article class="art-chip support-card" data-asset-slot="casa-vovo/vovo-routine-icons"><span class="support-card__icon">RT</span><strong>Rotina visual</strong><small>sequencia da manha</small></article>
+        </div>
+
+        <div class="module-hud">
+          <article class="hud-card">
+            <span class="hud-label">Passeio</span>
+            <strong class="hud-value" id="vovoHudWalk">0 de 3</strong>
+            <small class="hud-note">etapas do caminho</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Rotina</span>
+            <strong class="hud-value" id="vovoHudRoutine">0 de 4</strong>
+            <small class="hud-note">manhã organizada</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Estilo do dia</span>
+            <strong class="hud-value" id="vovoHudStyle">A escolher</strong>
+            <small class="hud-note">quiz com a tia</small>
+          </article>
+        </div>
+
+        <div class="app-toolbar">
+          <button class="app-action active" data-state-target="vovoStateNote" data-state-message="Modo rotina: a casa da vovo organiza o dia em passos simples e seguros." type="button">☀️ Rotina</button>
+          <button class="app-action" data-state-target="vovoStateNote" data-state-message="Modo passeio: cada escolha de caminho reforca calma, companhia e pertencimento." type="button">🚶 Passeio</button>
+          <button class="app-action" data-state-target="vovoStateNote" data-state-message="Modo estilo: a tela vira um quiz divertido com humor e afeto." type="button">🧵 Estilo</button>
+          <button class="app-action" data-state-target="vovoStateNote" data-state-message="Modo colo: tudo aqui lembra que a casa da vovo segura sem apertar." type="button">🫶 Colo</button>
+        </div>
+        <div class="state-note" id="vovoStateNote">Modo rotina: a casa da vovo organiza o dia em passos simples e seguros.</div>
+
+        <div class="guided-panel">
+          <p class="guided-title">Acoes guiadas desta tela</p>
+          <div class="guided-replies">
+            <button class="guided-chip" data-state-target="walkResult" data-state-message='Vovo segura a mao de Cora e diz: "Vamos pelo caminho que deixa seu peito calmo primeiro."' type="button">Quero ir devagar</button>
+            <button class="guided-chip" data-state-target="routineResult" data-state-message="Na casa da vovo, cada coisa encontra sua hora e isso deixa o dia mais macio." type="button">Me lembra a rotina</button>
+            <button class="guided-chip" data-state-target="styleResult" data-state-message="A tia aprova: hoje o look pode ser confortavel, bonito e um pouquinho misterioso." type="button">Quero ajuda com o look</button>
+            <button class="guided-chip" data-state-target="vovoStateNote" data-state-message="Cora escolheu ficar mais um pouquinho no clima de casa antiga, pao quentinho e seguranca." type="button">Quero ficar aqui mais um pouco</button>
+          </div>
+        </div>
+
+        <div class="section-grid">
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 1</p><h3>Passeio com o vovo</h3></div><span class="tag" id="walkCounter">0 de 3</span></div>
+            <p class="helper-text">Escolha o melhor caminho para chegar na pracinha.</p>
+            <div class="choice-stack" id="walkChoices">
+              <button class="trail-button" data-step="1" data-correct="true" type="button">Passar pelo portao azul</button>
+              <button class="trail-button" data-step="1" type="button">Ir pelo atalho da cerca</button>
+              <button class="trail-button hidden" data-step="2" type="button">Seguir pela rua mais barulhenta</button>
+              <button class="trail-button hidden" data-step="2" data-correct="true" type="button">Virar perto do ipe amarelo</button>
+              <button class="trail-button hidden" data-step="3" data-correct="true" type="button">Parar no banco com vista para o lago</button>
+              <button class="trail-button hidden" data-step="3" type="button">Correr para a rua sem placa</button>
+            </div>
+            <div class="reply-card" id="walkResult">Vamos com calma, um pedacinho por vez.</div>
+          </article>
+
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 2</p><h3>Rotina com a vovo</h3></div><span class="tag" id="routineCounter">0 de 4</span></div>
+            <p class="helper-text">Toque nas coisas na ordem certa.</p>
+            <div class="choice-stack" id="routineChoices">
+              <button class="routine-button" data-order="2" type="button">Arrumar a cama</button>
+              <button class="routine-button" data-order="4" type="button">Regar as plantas</button>
+              <button class="routine-button" data-order="1" type="button">Abrir a janela e respirar fundo</button>
+              <button class="routine-button" data-order="3" type="button">Tomar cafe com pao quentinho</button>
+            </div>
+            <div class="reply-card" id="routineResult">Na casa da Vovo, cada coisa tem sua hora.</div>
+          </article>
+        </div>
+
+        <article class="panel minigame wide-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Mini game 3</p><h3>Estilo com a tia</h3></div><span class="tag">arquetipos</span></div>
+            <p class="helper-text">Escolha o mood do dia da Cora.</p>
+          <div class="choice-stack three-columns" id="styleChoices">
+            <button class="style-button" data-style="bruxa aesthetic" data-description="Camadas suaves, estrelas discretas e um brilho que aparece so quando a luz bate." type="button">Brilho delicado</button>
+            <button class="style-button" data-style="bruxinha blogueira" data-description="Lacos, cores doces e um look prontinho para registrar memorias bonitas." type="button">Fofo e fotogenico</button>
+            <button class="style-button" data-style="feiticeira vintage" data-description="Pecas classicas, conforto e um charme de historia antiga bem cuidada." type="button">Classico encantado</button>
+          </div>
+            <div class="experiment-result" id="styleResult">Escolha um estilo para comecar.</div>
+        </article>
+      </section>
+
+      <section class="screen" id="quarto-cora">
+        <div class="section-hero">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Quarto da Cora</p>
+              <h2>Identidade, expressao e autonomia</h2>
+            </div>
+            <p class="section-copy">Um quarto com objetos queridos, roupas fofas e espaco para ser voce.</p>
+          </div>
+          <aside class="art-frame" data-asset-slot="quarto-cora/quarto-overview-scene">
+            <div class="art-surface">
+              <span class="art-kicker">Cena principal</span>
+              <strong>O quarto da Cora</strong>
+              <p>Visao geral do quarto com cama, cantinho de leitura, objetos magicos e o Noir em um canto inesperado.</p>
+              <div class="placeholder-scene placeholder-scene--split">
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">LK</span>
+                  <strong>Look do dia</strong>
+                  <small>roupa + ocasiao</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">DC</span>
+                  <strong>Decoracao</strong>
+                  <small>ativar ou remover objetos</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">NR</span>
+                  <strong>Noir</strong>
+                  <small>reacoes pequenas e observadoras</small>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="asset-rack">
+          <article class="art-chip support-card" data-asset-slot="quarto-cora/wardrobe-sheet"><span class="support-card__icon">LK</span><strong>Guarda-roupa</strong><small>pecas para combinacao</small></article>
+          <article class="art-chip support-card" data-asset-slot="quarto-cora/room-props-sheet"><span class="support-card__icon">DC</span><strong>Decoracao</strong><small>objetos ativaveis do quarto</small></article>
+        </div>
+
+        <div class="module-hud">
+          <article class="hud-card">
+            <span class="hud-label">Look atual</span>
+            <strong class="hud-value" id="quartoHudLook">Chapeu estrelado</strong>
+            <small class="hud-note">visual da Cora</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Decoracao</span>
+            <strong class="hud-value" id="quartoHudDecor">0 itens</strong>
+            <small class="hud-note">quarto montado hoje</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Humor do Noir</span>
+            <strong class="hud-value" id="quartoHudNoir">Observando</strong>
+            <small class="hud-note">companheiro da vez</small>
+          </article>
+        </div>
+
+        <div class="app-toolbar">
+          <button class="app-action active" data-state-target="quartoStateNote" data-state-message="Modo look: combinar ocasiao e roupa ajuda a Cora a se reconhecer na propria imagem." type="button">👗 Look</button>
+          <button class="app-action" data-state-target="quartoStateNote" data-state-message="Modo decoracao: o quarto muda conforme os objetos que Cora quer por perto hoje." type="button">🛏️ Decorar</button>
+          <button class="app-action" data-state-target="quartoStateNote" data-state-message="Modo Noir: pequenas interacoes deixam o quarto mais vivo e companheiro." type="button">🐈 Noir</button>
+          <button class="app-action" data-state-target="quartoStateNote" data-state-message="Modo autonomia: aqui a Cora experimenta identidade sem precisar acertar tudo." type="button">✨ Autonomia</button>
+        </div>
+        <div class="state-note" id="quartoStateNote">Modo look: combinar ocasiao e roupa ajuda a Cora a se reconhecer na propria imagem.</div>
+
+        <div class="guided-panel">
+          <p class="guided-title">Atalhos guiados da Cora</p>
+          <div class="guided-replies">
+            <button class="guided-chip" data-state-target="wardrobeResult" data-state-message="Hoje quero me vestir como quem sabe alguma coisa que o resto do mundo ainda nao percebeu." type="button">Quero um look corajoso</button>
+            <button class="guided-chip" data-state-target="decorResult" data-state-message="Hoje o quarto pede varal de estrelas, almofada de lua e um cantinho para respirar." type="button">Quero um quarto aconchegante</button>
+            <button class="guided-chip" data-state-target="roomNoirResult" data-state-message="Noir se aproxima devagar, como quem aprova a ideia de passar a tarde por aqui." type="button">Chamar o Noir</button>
+            <button class="guided-chip" data-state-target="quartoStateNote" data-state-message="Cora escolheu um quarto que parece abrigo, reflexo e pequena aventura ao mesmo tempo." type="button">Quero deixar tudo com a minha cara</button>
+          </div>
+        </div>
+
+        <div class="section-grid">
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 1</p><h3>Escolher roupas</h3></div><span class="tag">boneca de papel</span></div>
+            <p class="helper-text">Escolha uma ocasiao e um look.</p>
+            <div class="wardrobe-layout">
+              <div class="choice-stack">
+                <strong>Ocasiao</strong>
+                <button class="wardrobe-button active" data-group="occasion" data-value="aula de magia" type="button">Aula de magia</button>
+                <button class="wardrobe-button" data-group="occasion" data-value="visita a vovo" type="button">Visita a vovo</button>
+                <button class="wardrobe-button" data-group="occasion" data-value="passeio com amigos" type="button">Passeio com amigos</button>
+              </div>
+              <div class="choice-stack">
+                <strong>Look</strong>
+                <button class="wardrobe-button active" data-group="look" data-value="chapeu estrelado" type="button">Chapeu estrelado</button>
+                <button class="wardrobe-button" data-group="look" data-value="cardiga lilas" type="button">Cardiga lilas</button>
+                <button class="wardrobe-button" data-group="look" data-value="botas brilhantes" type="button">Botas brilhantes</button>
+              </div>
+            </div>
+            <div class="reply-card" id="wardrobeResult">Hoje Cora vai de chapeu estrelado para a aula de magia.</div>
+          </article>
+
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 2</p><h3>Decoracao do quarto</h3></div><span class="tag" id="decorCounter">0 itens</span></div>
+            <p class="helper-text">Escolha os objetos do quarto de hoje.</p>
+            <div class="decor-grid" id="decorGrid">
+              <button class="decor-button" data-label="varal de estrelas" type="button">Varal de estrelas</button>
+              <button class="decor-button" data-label="almofada de lua" type="button">Almofada de lua</button>
+              <button class="decor-button" data-label="estante de pocoes" type="button">Estante de pocoes</button>
+              <button class="decor-button" data-label="quadro de memorias" type="button">Quadro de memorias</button>
+            </div>
+            <div class="reply-card" id="decorResult">O quarto espera o jeitinho da Cora.</div>
+          </article>
+        </div>
+
+        <article class="panel minigame wide-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Mini game 3</p><h3>Interacao com Noir</h3></div><span class="tag">companheiro</span></div>
+            <p class="helper-text">Escolha como brincar com Noir.</p>
+          <div class="room-noir-layout">
+            <div class="choice-stack" id="roomNoirChoices">
+              <button class="room-noir-button" data-response="Noir encosta a cabeca na mao da Cora e ronrona bem baixinho." type="button">Fazer carinho</button>
+              <button class="room-noir-button" data-response="Noir corre atras da bolinha e volta como se tivesse descoberto um segredo." type="button">Brincar de bolinha</button>
+              <button class="room-noir-button" data-response="Noir se esconde na manta e deixa so os olhos brilhando para fora." type="button">Cobrir com a manta</button>
+            </div>
+            <div class="experiment-result" id="roomNoirResult">Noir observa tudo e espera a proxima brincadeira.</div>
+          </div>
+        </article>
+      </section>
+      <section class="screen" id="jardim-sete-luas">
+        <div class="section-hero">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Jardim das Sete Luas</p>
+              <h2>Aprender magia tambem e experimentar o mundo</h2>
+            </div>
+            <p class="section-copy">Um jardim-escola cheio de pistas, experimentos e cantinhos misteriosos.</p>
+          </div>
+          <aside class="art-frame" data-asset-slot="jardim-sete-luas/jardim-overview-scene">
+            <div class="art-surface">
+              <span class="art-kicker">Cena principal</span>
+              <strong>O Jardim das Sete Luas</strong>
+              <p>Vista do Jardim com canteiros magicos, trilhas, lago e construcoes escolares ao fundo.</p>
+              <div class="placeholder-scene placeholder-scene--split">
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">JD</span>
+                  <strong>Detetive</strong>
+                  <small>encontrar trapaças da Jade</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">MG</span>
+                  <strong>Fundamentos</strong>
+                  <small>mistura de elementos</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">TR</span>
+                  <strong>Trilhas</strong>
+                  <small>escolhas leves pelo jardim</small>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="asset-rack">
+          <article class="art-chip support-card" data-asset-slot="jardim-sete-luas/jade-director-scene"><span class="support-card__icon">JD</span><strong>Cena da Jade</strong><small>apoio para investigacao</small></article>
+          <article class="art-chip support-card" data-asset-slot="jardim-sete-luas/magic-elements-sheet"><span class="support-card__icon">MG</span><strong>Elementos magicos</strong><small>planta, agua, fogo e vento</small></article>
+        </div>
+
+        <div class="module-hud">
+          <article class="hud-card">
+            <span class="hud-label">Pista escolhida</span>
+            <strong class="hud-value" id="jardimHudJade">Investigando</strong>
+            <small class="hud-note">leitura da sala da diretora</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Mistura atual</span>
+            <strong class="hud-value" id="jardimHudMagic">Planta + Agua</strong>
+            <small class="hud-note">fundamentos de magia</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Trilha escolhida</span>
+            <strong class="hud-value" id="jardimHudGarden">Nao escolhida</strong>
+            <small class="hud-note">como atravessar o jardim</small>
+          </article>
+        </div>
+
+        <div class="app-toolbar">
+          <button class="app-action active" data-state-target="jardimStateNote" data-state-message="Modo investigacao: a cena estimula detalhe, suspeita e leitura do que parece fora do lugar." type="button">🕵️ Investigar</button>
+          <button class="app-action" data-state-target="jardimStateNote" data-state-message="Modo aula: combinacoes de elementos transformam a sala em laboratorio de tentativa e erro." type="button">🧪 Combinar</button>
+          <button class="app-action" data-state-target="jardimStateNote" data-state-message="Modo exploracao: o jardim responde a escolhas leves e a curiosidade gentil." type="button">🌿 Explorar</button>
+          <button class="app-action" data-state-target="jardimStateNote" data-state-message="Modo escola: a tela junta evento, fofoca magica e descoberta em volta da Jade." type="button">🏫 Escola</button>
+        </div>
+        <div class="state-note" id="jardimStateNote">Modo investigacao: a cena estimula detalhe, suspeita e leitura do que parece fora do lugar.</div>
+
+        <div class="guided-panel">
+          <p class="guided-title">Escolhas guiadas desta aula</p>
+          <div class="guided-replies">
+            <button class="guided-chip" data-state-target="jadeResult" data-state-message="Cora olha de novo e percebe que a regra escrita ha pouco tempo conta mais do que a mochila brilhante." type="button">Quero rever as pistas</button>
+            <button class="guided-chip" data-state-target="magicResult" data-state-message="Agua com vento parece uma boa mistura para hoje: movimento sem susto e descoberta sem rigidez." type="button">Sugere uma mistura</button>
+            <button class="guided-chip" data-state-target="gardenResult" data-state-message="Hoje quero seguir as lanternas e deixar o jardim me mostrar alguma coragem nova." type="button">Quero seguir as lanternas</button>
+            <button class="guided-chip" data-state-target="jardimStateNote" data-state-message="Cora escolheu aprender olhando com cuidado antes de agir correndo." type="button">Quero ir com calma</button>
+          </div>
+        </div>
+
+        <div class="section-grid">
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 1</p><h3>Sala da diretora</h3></div><span class="tag">detetive</span></div>
+            <p class="helper-text">Escolha a melhor pista sobre a Jade.</p>
+            <div class="choice-stack" id="jadeChoices">
+              <button class="jade-button" data-result="Boa leitura: a assinatura trocada mostra que Jade tentou parecer mais obediente do que foi." type="button">A assinatura no bilhete parece copiada.</button>
+              <button class="jade-button" data-result="Quase isso - o brilho chama atencao, mas nao prova nada sozinho." type="button">O brilho da mochila esta exagerado.</button>
+              <button class="jade-button" data-result="Boa observacao: a tinta ainda fresca conta que a regra foi alterada depois da confusao." type="button">A regra no quadro foi escrita ha pouco tempo.</button>
+            </div>
+            <div class="reply-card" id="jadeResult">Vamos investigar primeiro e decidir depois.</div>
+          </article>
+
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 2</p><h3>Fundamentos de magia</h3></div><span class="tag">combinacoes</span></div>
+            <p class="helper-text">Escolha dois elementos e misture.</p>
+            <div class="magic-layout">
+              <div class="choice-stack">
+                <strong>Primeiro elemento</strong>
+                <button class="magic-button active" data-group="first" data-value="planta" type="button">Planta</button>
+                <button class="magic-button" data-group="first" data-value="agua" type="button">Agua</button>
+                <button class="magic-button" data-group="first" data-value="fogo" type="button">Fogo</button>
+              </div>
+              <div class="choice-stack">
+                <strong>Segundo elemento</strong>
+                <button class="magic-button active" data-group="second" data-value="agua" type="button">Agua</button>
+                <button class="magic-button" data-group="second" data-value="fogo" type="button">Fogo</button>
+                <button class="magic-button" data-group="second" data-value="vento" type="button">Vento</button>
+              </div>
+            </div>
+            <div class="experiment-result" id="magicResult">Planta + agua: um broto espreguica e cresce devagar, como quem acorda feliz.</div>
+          </article>
+        </div>
+
+        <article class="panel minigame wide-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Mini game 3</p><h3>Centro do jardim</h3></div><span class="tag">escolhas leves</span></div>
+            <p class="helper-text">Escolha como passar pelo jardim.</p>
+          <div class="choice-stack three-columns" id="gardenChoices">
+            <button class="garden-button" data-result="Cora caminha devagar entre as flores e percebe que o silencio tambem ensina." type="button">Ouvir o jardim</button>
+            <button class="garden-button" data-result="Ela segue as lanternas ate uma clareira e encontra coragem para fazer mais perguntas." type="button">Seguir as lanternas</button>
+            <button class="garden-button" data-result="Cora se senta perto do lago e descobre que descansar tambem faz parte do aprendizado." type="button">Descansar a beira do lago</button>
+          </div>
+            <div class="reply-card" id="gardenResult">O jardim gosta de quem passa com curiosidade e calma.</div>
+        </article>
+      </section>
+
+      <section class="screen" id="caderno-cora">
+        <div class="section-hero">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Caderno da Cora</p>
+              <h2>Um lugar para guardar o que sente por dentro</h2>
+            </div>
+            <p class="section-copy">Um lugar para guardar pensamentos, desenhos e sentimentos.</p>
+          </div>
+          <aside class="art-frame" data-asset-slot="caderno-cora/open-journal-scene">
+            <div class="art-surface">
+              <span class="art-kicker">Cena principal</span>
+              <strong>O caderno da Cora</strong>
+              <p>Caderno aberto com recortes, rabiscos, folhas guardadas e uma luz quente pousando sobre a pagina.</p>
+              <div class="placeholder-scene placeholder-scene--split">
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">PG</span>
+                  <strong>Paginas</strong>
+                  <small>trechos desbloqueaveis</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">HM</span>
+                  <strong>Humor</strong>
+                  <small>como Cora esta se sentindo</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">LM</span>
+                  <strong>Lembrancas</strong>
+                  <small>guardar o que tocou o dia</small>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="asset-rack">
+          <article class="art-chip support-card" data-asset-slot="caderno-cora/journal-tabs-sheet"><span class="support-card__icon">PG</span><strong>Abas do caderno</strong><small>navegacao entre paginas</small></article>
+          <article class="art-chip support-card" data-asset-slot="caderno-cora/memory-objects-sheet"><span class="support-card__icon">LM</span><strong>Memorias</strong><small>objetos afetivos guardados</small></article>
+        </div>
+
+        <div class="module-hud">
+          <article class="hud-card">
+            <span class="hud-label">Pagina aberta</span>
+            <strong class="hud-value" id="cadernoHudPage">Saudade boa</strong>
+            <small class="hud-note">aba atual do caderno</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Sentimento</span>
+            <strong class="hud-value" id="cadernoHudMood">Nao escolhido</strong>
+            <small class="hud-note">humor do momento</small>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Lembranca</span>
+            <strong class="hud-value" id="cadernoHudMemory">Nao escolhida</strong>
+            <small class="hud-note">colecao afetiva do dia</small>
+          </article>
+        </div>
+
+        <div class="app-toolbar">
+          <button class="app-action active" data-state-target="cadernoStateNote" data-state-message="Modo escrita: o caderno vira um lugar seguro para pensamentos que ainda estao se organizando." type="button">✍️ Escrever</button>
+          <button class="app-action" data-state-target="cadernoStateNote" data-state-message="Modo sentimento: a tela ajuda Cora a nomear o que esta dentro dela sem pressa." type="button">💜 Sentir</button>
+          <button class="app-action" data-state-target="cadernoStateNote" data-state-message="Modo memoria: pequenos objetos do dia ganham valor de lembranca importante." type="button">🗂️ Guardar</button>
+          <button class="app-action" data-state-target="cadernoStateNote" data-state-message="Modo releitura: reler tambem ajuda a perceber o quanto a Cora mudou." type="button">📖 Reler</button>
+        </div>
+        <div class="state-note" id="cadernoStateNote">Modo escrita: o caderno vira um lugar seguro para pensamentos que ainda estao se organizando.</div>
+
+        <div class="guided-panel">
+          <p class="guided-title">Atalhos do mundo interno</p>
+          <div class="guided-replies">
+            <button class="guided-chip" data-state-target="journalCard" data-state-richtext="<strong>Pagina das perguntas</strong><p>Hoje eu ainda nao sei todas as respostas, mas minhas perguntas estao fazendo companhia umas para as outras.</p>" type="button">Abrir pagina das perguntas</button>
+            <button class="guided-chip" data-state-target="moodResult" data-state-message="Cora escreve: Hoje estou sensivel, mas sem me abandonar por causa disso." type="button">Estou sensivel</button>
+            <button class="guided-chip" data-state-target="memoryResult" data-state-message="Uma folha do jardim entra no caderno porque lembra que crescer tambem acontece em silencio." type="button">Guardar uma folha</button>
+            <button class="guided-chip" data-state-target="cadernoStateNote" data-state-message="Cora escolheu transformar o que sente em algo que pode ser visto, relido e guardado." type="button">Quero escrever mais um pouco</button>
+          </div>
+        </div>
+
+        <div class="section-grid">
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 1</p><h3>Paginas desbloqueaveis</h3></div><span class="tag">memorias</span></div>
+            <p class="helper-text">Toque em uma aba para abrir a pagina.</p>
+            <div class="choice-stack" id="journalPages">
+              <button class="journal-page-button active" data-title="Pagina da saudade boa" data-body="Hoje a saudade apareceu sem machucar tanto. Ela veio lembrando vozes, cheiros e o jeito que cada casa cuida de mim de um jeito diferente." type="button">Saudade boa</button>
+              <button class="journal-page-button" data-title="Pagina das perguntas" data-body="Anotei tres perguntas que ainda nao tem resposta. Mamae diz que pergunta tambem pode ser abrigo quando a gente nao entende tudo." type="button">Perguntas</button>
+              <button class="journal-page-button" data-title="Pagina das pequenas coragens" data-body="Fui devagar, mas fui. As vezes coragem e so continuar mesmo com o coracao ainda aprendendo." type="button">Coragens</button>
+            </div>
+            <div class="journal-card" id="journalCard"><strong>Pagina da saudade boa</strong><p>Hoje a saudade apareceu sem machucar tanto. Ela veio lembrando vozes, cheiros e o jeito que cada casa cuida de mim de um jeito diferente.</p></div>
+          </article>
+
+          <article class="panel minigame">
+            <div class="panel-heading"><div><p class="eyebrow">Mini game 2</p><h3>Como a Cora esta?</h3></div><span class="tag">emocoes</span></div>
+            <p class="helper-text">Escolha como a Cora esta agora.</p>
+            <div class="choice-stack" id="moodChoices">
+              <button class="mood-button" data-result="Cora escreve: Hoje estou sensivel. Vou tentar falar baixo comigo mesma, como quem conversa com uma amiga." type="button">Sensivel</button>
+              <button class="mood-button" data-result="Cora escreve: Hoje estou curiosa. Quero seguir as perguntas sem me cobrar respostas rapidas." type="button">Curiosa</button>
+              <button class="mood-button" data-result="Cora escreve: Hoje estou corajosa. Nao porque nada doi, mas porque ja sei onde posso me apoiar." type="button">Corajosa</button>
+            </div>
+            <div class="reply-card" id="moodResult">O caderno responde quando Cora fala a verdade.</div>
+          </article>
+        </div>
+        <article class="panel minigame wide-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Mini game 3</p><h3>Lembranca do dia</h3></div><span class="tag">colecao afetiva</span></div>
+            <p class="helper-text">Escolha uma lembranca para guardar.</p>
+          <div class="memory-grid" id="memoryChoices">
+            <button class="memory-button" data-result="Uma foto tremida do jantar vira lembranca importante porque mostra todo mundo rindo junto." type="button">Foto do jantar</button>
+            <button class="memory-button" data-result="Uma folha do jardim lembra que crescer as vezes acontece em silencio." type="button">Folha do jardim</button>
+            <button class="memory-button" data-result="Um recado da mamae vira tesouro porque cabe no bolso e no coracao." type="button">Bilhete dobrado</button>
+            <button class="memory-button" data-result="Um fio de la da vovo vira prova de que cuidado tambem deixa textura na memoria." type="button">Fio de la lilas</button>
+          </div>
+            <div class="experiment-result" id="memoryResult">As lembrancas mais queridas podem ser bem pequenas.</div>
+        </article>
+      </section>
+
+      <section class="screen" id="bruxozap">
+        <div class="section-hero">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Bruxozap</p>
+              <h2>O vinculo continua mesmo a distancia</h2>
+            </div>
+            <p class="section-copy">Um chat colorido, simples e cheio de carinho.</p>
+          </div>
+          <aside class="art-frame" data-asset-slot="bruxozap/phone-portraits-sheet">
+            <div class="art-surface">
+              <span class="art-kicker">Retratos de conversa</span>
+              <strong>Figurinhas e avatares</strong>
+              <p>Pequenos retratos para Mamae, Papai, Tia Ingrid, colegas e Cora deixarem o chat mais vivo.</p>
+              <div class="placeholder-scene placeholder-scene--split">
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">CT</span>
+                  <strong>Contatos</strong>
+                  <small>familia, tia e colegas</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">AU</span>
+                  <strong>Fotos</strong>
+                  <small>mensagens com lembrancas</small>
+                </article>
+                <article class="placeholder-card">
+                  <span class="placeholder-icon">VD</span>
+                  <strong>Emojis</strong>
+                  <small>respostas rapidas e divertidas</small>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="bruxozap-layout">
+          <article class="panel contacts-panel">
+            <div class="panel-heading"><div><p class="eyebrow">Conversas</p><h3>Inbox da Cora</h3></div><span class="tag">chat</span></div>
+            <div class="contacts-filters">
+              <span class="contacts-filter contacts-filter--active">Tudo</span>
+              <span class="contacts-filter">Familia</span>
+              <span class="contacts-filter">Escola</span>
+            </div>
+            <div class="contacts-search"><span>🔎</span><input type="text" value="Buscar conversas" aria-label="Buscar conversas" readonly></div>
+            <div class="contact-list" id="contactList"></div>
+          </article>
+
+          <article class="panel phone-panel">
+            <div class="phone-frame">
+              <div class="phone-statusbar">
+                <span>09:41</span>
+                <span>Bruxozap</span>
+                <span>100%</span>
+              </div>
+              <div class="phone-notch"></div>
+              <div class="phone-header">
+                <div class="thread-identity">
+                  <div class="thread-avatar" id="threadAvatar">M</div>
+                  <div>
+                  <p class="phone-name" id="threadName">Mamae</p>
+                  <p class="phone-status" id="threadStatus">online agora</p>
+                  </div>
+                </div>
+                <div class="phone-actions">
+                  <button class="icon-button" data-action="audio" type="button">🎧</button>
+                  <button class="icon-button" data-action="call" type="button">📞</button>
+                  <button class="icon-button" data-action="video" type="button">🎥</button>
+                </div>
+              </div>
+
+              <div class="thread-stage">
+                <div>
+                  <p class="thread-stage__label" id="threadMood">familia • aconchego</p>
+                  <p class="thread-stage__hint" id="threadHint">O chat mistura saudade, carinho e pequenas brincadeiras do dia.</p>
+                </div>
+                <span class="thread-stage__badge" id="threadBadge">💜</span>
+              </div>
+
+              <div class="day-divider">hoje</div>
+              <div class="message-list" id="messageList" aria-live="polite"></div>
+
+              <div class="quick-actions">
+                <button class="quick-button" data-extra="foto" type="button">📷 Foto</button>
+                <button class="quick-button" data-extra="quiz" type="button">✨ Surpresa</button>
+                <button class="quick-button" data-extra="adesivo" type="button">😄 Emoji</button>
+                <button class="quick-button" data-extra="carinho" type="button">💜 Carinho</button>
+                <button class="quick-button" data-extra="pergunta" type="button">❓ Pergunta</button>
+              </div>
+
+              <div class="quick-replies-wrap">
+                <p class="quick-replies-title">Respostas da Cora</p>
+                <div class="quick-replies" id="quickReplies"></div>
+              </div>
+
+              <div class="emoji-tray">
+                <span>✨</span>
+                <span>💜</span>
+                <span>🌙</span>
+                <span>🐈‍⬛</span>
+                <span>🧪</span>
+                <span>📷</span>
+              </div>
+
+              <div class="composer-bar">
+                <button class="composer-tool" type="button">＋</button>
+                <div class="composer-input">Responder para <span id="composerName">Mamae</span></div>
+                <button class="composer-tool composer-tool--send" type="button">➤</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel memory-panel">
+            <div class="panel-heading"><div><p class="eyebrow">Clima da conversa</p><h3>Bilhete do coracao</h3></div><span class="tag">emocao</span></div>
+            <div class="memory-note" id="memoryNote">Mesmo longe, a Cora continua cercada de carinho.</div>
+            <div class="guided-panel guided-panel--compact">
+              <p class="guided-title">Jeitos da Cora responder</p>
+              <div class="guided-replies">
+                <span class="guided-chip guided-chip--static">texto curto</span>
+                <span class="guided-chip guided-chip--static">emoji</span>
+                <span class="guided-chip guided-chip--static">foto</span>
+                <span class="guided-chip guided-chip--static">saudade</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="mapa">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Album da Cora</p>
+            <h2>Mais jeitos de brincar pelo mundo todo</h2>
+          </div>
+            <p class="section-copy">Se quiser brincar mais, escolha um passeio curtinho por esse mundo.</p>
+        </div>
+
+        <div class="roadmap-grid">
+          <article class="panel roadmap-card">
+            <h3>Teste de 8 minutos</h3>
+            <p>1. Ache o Noir. 2. Entre na Casa da Mamae. 3. Responda no Bruxozap. 4. Guarde uma lembranca no caderno.</p>
+            <button class="module-button" data-target="dashboard" type="button"><span>🏠</span><strong>Voltar ao inicio</strong><small>mapa, personagens e surpresa do Noir</small></button>
+          </article>
+          <article class="panel roadmap-card">
+            <h3>Escolha um favorito</h3>
+            <p>Tem dia de look novo, dia de experimento magico, dia de conversa no chat e dia de guardar sentimentos no caderno.</p>
+            <div class="module-grid">
+              <button class="module-button" data-target="quarto-cora" type="button"><span>👗</span><strong>Quarto</strong><small>roupas, decoracao e Noir</small></button>
+              <button class="module-button" data-target="jardim-sete-luas" type="button"><span>🧪</span><strong>Jardim</strong><small>misturas, pistas e escolhas</small></button>
+            </div>
+          </article>
+          <article class="panel roadmap-card">
+            <h3>Termine com carinho</h3>
+            <p>Passe pelo Bruxozap para responder como a Cora e depois guarde uma lembranca no caderno antes de sair.</p>
+            <div class="module-grid">
+              <button class="module-button" data-target="bruxozap" type="button"><span>💬</span><strong>Bruxozap</strong><small>mensagens, fotos e emojis</small></button>
+              <button class="module-button" data-target="caderno-cora" type="button"><span>📓</span><strong>Caderno</strong><small>sentimentos, paginas e memorias</small></button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

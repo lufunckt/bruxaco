@@ -1,0 +1,178 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 2184 >>
+stream
+BT
+/F1 11 Tf
+50 790 Td
+14 TL
+(# Lista de imagens e animacoes - Bruxinha Cora) Tj
+T* () Tj
+T* (Base de pastas:) Tj
+T* (C:\\Users\\luiza\\OneDrive\\Documentos\\New project\\bruxinha-cora-app\\assets\\) Tj
+T* () Tj
+T* (## 1. Cenas principais) Tj
+T* (- dashboard/world-map-scene.webp - mapa principal) Tj
+T* (- dashboard/luna-clara.webp - cidade) Tj
+T* (- dashboard/vassourinhas.webp - cidade) Tj
+T* (- dashboard/bruxilia.webp - cidade) Tj
+T* (- casa-mamae/mamae-house-scene.webp - cenario principal) Tj
+T* (- casa-vovo/vovo-house-scene.webp - cenario principal) Tj
+T* (- quarto-cora/quarto-overview-scene.webp - cenario principal) Tj
+T* (- jardim-sete-luas/jardim-overview-scene.webp - cenario principal) Tj
+T* (- caderno-cora/open-journal-scene.webp - cenario principal) Tj
+T* () Tj
+T* (## 2. Personagens / avatares) Tj
+T* (- dashboard/cora-portrait.webp - retrato/avatar) Tj
+T* (- dashboard/agata-portrait.webp - retrato/avatar) Tj
+T* (- dashboard/vovo-portrait.webp - retrato/avatar) Tj
+T* (- dashboard/jade-portrait.webp - retrato/avatar) Tj
+T* (- dashboard/noir-portrait.webp - retrato/avatar) Tj
+T* (- dashboard/tia-ingrid-portrait.webp - retrato/avatar) Tj
+T* () Tj
+T* (## 3. Apoios narrativos) Tj
+T* (- casa-mamae/cora-agata-dialogue.webp - cena de apoio) Tj
+T* (- jardim-sete-luas/jade-director-scene.webp - cena de apoio) Tj
+T* (- bruxozap/phone-portraits-sheet.webp - folha de retratos) Tj
+T* () Tj
+T* (## 4. Objetos / props) Tj
+T* (- casa-mamae/kitchen-props-sheet.webp - objetos) Tj
+T* (- casa-vovo/vovo-props-sheet.webp - objetos) Tj
+T* (- casa-vovo/vovo-routine-icons.webp - icones) Tj
+T* (- quarto-cora/wardrobe-sheet.webp - roupas) Tj
+T* (- quarto-cora/room-props-sheet.webp - objetos) Tj
+T* (- jardim-sete-luas/magic-elements-sheet.webp - elementos magicos) Tj
+T* (- caderno-cora/memory-objects-sheet.webp - memorias) Tj
+T* (- caderno-cora/journal-tabs-sheet.webp - abas e marcadores) Tj
+T* (- compartilhado/frame-ornaments-sheet.webp - ornamentos) Tj
+T* (- compartilhado/noir-mini-poses-sheet.webp - poses do Noir) Tj
+T* () Tj
+T* (## 5. Imagens do Bruxozap) Tj
+T* (Salvar em assets/midia/bruxozap/) Tj
+T* () Tj
+T* (Fotos de conversa:) Tj
+T* (- mamae/foto01.webp) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 1666 >>
+stream
+BT
+/F1 11 Tf
+50 790 Td
+14 TL
+(- mamae/foto02.webp) Tj
+T* (- pai/foto01.webp) Tj
+T* (- tia-ingrid/foto01.webp) Tj
+T* (- tia-ingrid/foto02.webp) Tj
+T* (- colegas/foto01.webp) Tj
+T* () Tj
+T* (Stickers / emojis ilustrados:) Tj
+T* (- stickers/coracao.webp) Tj
+T* (- stickers/lua.webp) Tj
+T* (- stickers/caldeirao.webp) Tj
+T* (- stickers/noir.webp) Tj
+T* (- stickers/estrela.webp) Tj
+T* (- stickers/vassoura.webp) Tj
+T* () Tj
+T* (## 6. Animacoes que valem a pena) Tj
+T* (Animacoes simples em CSS/JS:) Tj
+T* (- Noir mudando de lugar) Tj
+T* (- botoes pulando ao tocar) Tj
+T* (- brilho leve em cards clicaveis) Tj
+T* (- baloes do Bruxozap entrando na conversa) Tj
+T* (- reacao de resposta da Cora) Tj
+T* (- destaque de item encontrado) Tj
+T* (- transicao entre telas) Tj
+T* (- abrir e fechar paginas do caderno) Tj
+T* (- brilho magico no resultado de mistura) Tj
+T* (- selecao de look e decor com pequeno bounce) Tj
+T* () Tj
+T* (Animacoes em arquivo \(opcional\), salvar em assets/animacoes/) Tj
+T* (- compartilhado/noir-blink.gif ou .webm - Noir piscando) Tj
+T* (- bruxozap/digitando.webp ou .gif - indicador de digitando) Tj
+T* (- jardim-sete-luas/magic-sparkle.webp ou .gif - brilho magico) Tj
+T* (- quarto-cora/item-pop.webp ou .gif - item aparecendo) Tj
+T* (- caderno-cora/page-flip.webp ou .gif - virar pagina) Tj
+T* () Tj
+T* (Melhor formato para animacao leve:) Tj
+T* (- prefira CSS primeiro) Tj
+T* (- depois webm curto) Tj
+T* (- use gif so se nao tiver outro jeito) Tj
+T* () Tj
+T* (## 7. Audios e videos, se depois quiser completar) Tj
+T* (Audios:) Tj
+T* (- assets/audio/bruxozap/...) Tj
+T* () Tj
+T* (Videos curtos:) Tj
+T* (- assets/video/bruxozap/...) Tj
+T* () Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 563 >>
+stream
+BT
+/F1 11 Tf
+50 790 Td
+14 TL
+(## 8. Minimo para o app ficar de verdade) Tj
+T* (Obrigatorias:) Tj
+T* (- 5 cenarios principais) Tj
+T* (- 6 retratos dos personagens) Tj
+T* (- 4 cidades e mapa) Tj
+T* (- 1 sheet de roupas) Tj
+T* (- 1 sheet de objetos da Mamae) Tj
+T* (- 1 sheet de objetos da Vovo) Tj
+T* (- 1 sheet de elementos magicos) Tj
+T* (- 1 sheet de memorias) Tj
+T* (- retratos do Bruxozap) Tj
+T* () Tj
+T* (Depois:) Tj
+T* (- cenas de apoio) Tj
+T* (- stickers) Tj
+T* (- fotos do chat) Tj
+T* (- poses do Noir) Tj
+T* (- ornamentos) Tj
+T* (- animacoes extras) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+endobj
+9 0 obj
+<< /Type /Catalog /Pages 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000002321 00000 n 
+0000002447 00000 n 
+0000004165 00000 n 
+0000004291 00000 n 
+0000004905 00000 n 
+0000005031 00000 n 
+0000005100 00000 n 
+trailer
+<< /Size 10 /Root 9 0 R >>
+startxref
+5149
+%%EOF
